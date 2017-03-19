@@ -1,5 +1,6 @@
 package ru.platron.sdk;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -20,10 +21,12 @@ public class Signature {
 	    try {
 	        messageDigest = MessageDigest.getInstance("MD5");
 	        messageDigest.reset();
-	        messageDigest.update(string.getBytes());
+	        messageDigest.update(string.getBytes("UTF-8"));
 	        digest = messageDigest.digest();
 	    } catch (NoSuchAlgorithmException e) {
 	        e.printStackTrace();
+	    } catch (UnsupportedEncodingException e) {
+	    	e.printStackTrace();
 	    }
 	 
 	    BigInteger bigInt = new BigInteger(1, digest);

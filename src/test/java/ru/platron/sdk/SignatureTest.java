@@ -23,12 +23,24 @@ public class SignatureTest {
 	}
 	
 	@Test
+	public void prepare() {
+		TreeMap<String, String> params = new TreeMap<String, String>();
+		params.put("testKey", "test value");
+		params.put("aKey", "value");
+		
+		String actual = signature.prepare("index.php", params );
+		String expected = "index.php;value;test value;secret_key";
+		
+		assertEquals(expected, actual);
+	}
+	
+	@Test
 	public void make() {
 		TreeMap<String, String> params = new TreeMap<String, String>();
 		params.put("testKey", "test value");
 		params.put("aKey", "value");
 		
-		String actual = signature.make("index.php", params );
+		String actual = signature.make("index.php", params);
 		String expected = "7d3568b4ba955e2d03b96e99f14c9c9a";
 		
 		assertEquals(expected, actual);

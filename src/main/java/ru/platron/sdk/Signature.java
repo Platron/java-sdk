@@ -8,10 +8,10 @@ import java.util.TreeMap;
 
 public class Signature {
 	
-	private String secretLey;
+	private String secretKey;
 
 	public Signature(String secretKey) {
-		secretKey = secretLey;
+		this.secretKey = secretKey;
 	}
 
 	public String md5(String string) {
@@ -39,8 +39,18 @@ public class Signature {
 	    return md5Hex;
 	}
 
-	public String make(String scriptName, TreeMap<String, String> params) {
-		return "";
+	public String prepare(String scriptName, TreeMap<String, String> params) {
+		String result = scriptName;
+		
+		for(String value : params.values()) {
+			result += ";" + value;
+		}
+		
+		result += ";" + secretKey;
+		return result;
 	}
-
+	
+	public String make(String scriptName, TreeMap<String, String> params) {
+		return md5(prepare(scriptName, params));
+	}
 }

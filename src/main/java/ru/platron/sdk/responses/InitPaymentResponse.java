@@ -1,16 +1,19 @@
-package ru.platron.sdk;
+package ru.platron.sdk.responses;
 
 import java.io.StringReader;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.transform.stream.StreamSource;
 
 @XmlRootElement(name = "response")
-public class Response {
+public class InitPaymentResponse {
 	@XmlElement(name = "pg_status")
 	public String status;
 	
@@ -29,18 +32,25 @@ public class Response {
 	@XmlElement(name = "pg_redirect_url_type")
 	public String redirectUrlType;
 	
-	public static Response fromXml(String xml) {
-		Response response;
+	@XmlElement(name = "pg_accepted_payment_systems")
+	public String acceptedPaymentSystems;
+	
+	@XmlElementWrapper(name = "pg_ps_additional_data")
+	@XmlElementRef()
+	public List<PaymentSystem> psAdditionalData = null;
+	
+	public static InitPaymentResponse fromXml(String xml) {
+		InitPaymentResponse response;
 		try {
-			JAXBContext jaxbContext = JAXBContext.newInstance(Response.class);
+			JAXBContext jaxbContext = JAXBContext.newInstance(InitPaymentResponse.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			
-			response = (Response) jaxbUnmarshaller.unmarshal(new StreamSource(new StringReader(xml)));
+			response = (InitPaymentResponse) jaxbUnmarshaller.unmarshal(new StreamSource(new StringReader(xml)));
 			
 		} catch (JAXBException e) {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
-			response = new Response();
+			response = new InitPaymentResponse();
 		}
 		
 		return response;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<pg_salt>ijoi894j4ik39lo9</pg_salt>
+	<pg_status>ok</pg_status>
+	<pg_payment_id>15826</pg_payment_id>
+	<pg_redirect_url>redirect_url</pg_redirect_url>
+	<pg_redirect_url_type>need data</pg_redirect_url_type>
+	<pg_accepted_payment_systems>NAME1,NAME2</pg_accepted_payment_systems>
+	<pg_ps_additional_data>
+		<pg_payment_system>
+			<pg_name>NAME1</pg_name>
+			<pg_ps_data>
+				<key1>value1</key1>
+				<key2>value2</key2>
+			</pg_ps_data>
+		</pg_payment_system>
+	</pg_ps_additional_data>
+	<pg_sig>af8e41a4f425d124a23c3a53a3140bdc17ea0</pg_sig>
+</response>

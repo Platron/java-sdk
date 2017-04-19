@@ -12,13 +12,13 @@ import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "request")
 public abstract class BaseRequest {
-	@XmlElement(name = "pg_merchant_id")
+	@XmlElement(name = "pg_merchant_id", required = true)
 	public int merchantId;
 	
-	@XmlElement(name = "pg_salt")
+	@XmlElement(name = "pg_salt", required = true)
 	public String salt;
 	
-	@XmlElement(name = "pg_sig")
+	@XmlElement(name = "pg_sig", required = true)
 	public String signature;
 	
 	public abstract String getScriptName();

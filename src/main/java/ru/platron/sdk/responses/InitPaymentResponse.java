@@ -1,16 +1,13 @@
 package ru.platron.sdk.responses;
 
-import java.io.StringReader;
 import java.util.List;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.transform.stream.StreamSource;
+
+import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "response")
 public class InitPaymentResponse {
@@ -40,19 +37,6 @@ public class InitPaymentResponse {
 	public List<PaymentSystem> psAdditionalData = null;
 	
 	public static InitPaymentResponse fromXml(String xml) {
-		InitPaymentResponse response;
-		try {
-			JAXBContext jaxbContext = JAXBContext.newInstance(InitPaymentResponse.class);
-			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-			
-			response = (InitPaymentResponse) jaxbUnmarshaller.unmarshal(new StreamSource(new StringReader(xml)));
-			
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-			response = new InitPaymentResponse();
-		}
-		
-		return response;
+		return (InitPaymentResponse) XmlUtils.fromXml(xml, InitPaymentResponse.class);
 	}
 }

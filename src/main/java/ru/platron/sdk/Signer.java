@@ -6,11 +6,11 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.TreeMap;
 
-public class Signature {
+public class Signer {
 	
 	private String secretKey;
 
-	public Signature(String secretKey) {
+	public Signer(String secretKey) {
 		this.secretKey = secretKey;
 	}
 

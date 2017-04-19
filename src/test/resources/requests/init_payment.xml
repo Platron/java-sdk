@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_salt>test_salt</pg_salt>
+	<pg_sig>0507023b899611616558bcb1f7fa7ea6</pg_sig>
+	<pg_amount>12.3</pg_amount>
+	<pg_description>Test description</pg_description>
+</request>

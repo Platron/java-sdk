@@ -6,6 +6,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.TreeMap;
 
+import ru.platron.sdk.webhook.BaseHook;
+
 public class Signer {
 	
 	private String secretKey;
@@ -52,5 +54,11 @@ public class Signer {
 	
 	public String make(String scriptName, TreeMap<String, String> params) {
 		return md5(prepare(scriptName, params));
+	}
+
+	public boolean check(String scriptName, BaseHook hook) {
+		String signature = make(scriptName, (TreeMap<String, String>) hook.getParamsMap());
+		
+		return signature == hook.signature;
 	}
 }

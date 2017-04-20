@@ -1,60 +1,24 @@
 package ru.platron.sdk.request;
 
-import java.lang.reflect.Field;
-import java.util.Map;
 import java.util.TreeMap;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ru.platron.sdk.Signer;
+import ru.platron.sdk.XmlObject;
 import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "request")
-public abstract class BaseRequest {
+public abstract class BaseRequest extends XmlObject {
 	@XmlElement(name = "pg_merchant_id", required = true)
 	public int merchantId;
-	
-	@XmlElement(name = "pg_salt", required = true)
-	public String salt;
-	
-	@XmlElement(name = "pg_sig", required = true)
-	public String signature;
 	
 	public abstract String getScriptName();
 	public abstract Class<?> getResponseClass();
 	
 	public String toXml() {
 		return XmlUtils.toXml(this);
-	}
-	
-	public Map<String, String> getParamsMap() {
-		Map<String, String> result = new TreeMap<String, String>();
-		
-		for (Field field : this.getClass().getFields()) {
-			Object value = null;
-			try {
-				value = field.get(this);
-			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			if (value == null) {
-				continue;
-			}
-			
-			XmlElement annotation = field.getAnnotation(XmlElement.class);
-			if (annotation == null) {
-				continue;
-			}
-			
-			result.put(annotation.name(), value.toString());
-		}
-		
-		return result;
 	}
 	
 	public void sign(Signer signer) {

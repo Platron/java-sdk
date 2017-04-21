@@ -9,7 +9,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 
-import ru.platron.sdk.request.BaseRequest;
+import ru.platron.sdk.XmlObject;
 
 public class XmlUtils {
 	public static Object fromXml(String xml, Class<?> cls) {
@@ -28,7 +28,7 @@ public class XmlUtils {
 		return response;
 	}
 	
-	public static String toXml(BaseRequest request) {
+	public static String toXml(XmlObject request) {
 		try {
 			JAXBContext jaxbContext = JAXBContext.newInstance(request.getClass());
 			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();

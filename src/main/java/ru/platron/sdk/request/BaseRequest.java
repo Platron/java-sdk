@@ -12,7 +12,7 @@ import ru.platron.sdk.utils.XmlUtils;
 @XmlRootElement(name = "request")
 public abstract class BaseRequest extends XmlObject {
 	@XmlElement(name = "pg_merchant_id", required = true)
-	public int merchantId;
+	public String merchantId;
 	
 	public abstract String getScriptName();
 	public abstract Class<?> getResponseClass();

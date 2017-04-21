@@ -15,8 +15,8 @@ public class InitPaymentRequestTest {
 	@Test
 	public void test() {
 		InitPaymentRequest request = new InitPaymentRequest();
-		request.merchantId = 82;
-		request.amount = 12.3;
+		request.merchantId = "82";
+		request.amount = "12.3";
 		request.description = "Test description";
 		request.salt = "test_salt";
 		
@@ -32,8 +32,8 @@ public class InitPaymentRequestTest {
 	@Test
 	public void testParams() {
 		InitPaymentRequest request = new InitPaymentRequest();
-		request.merchantId = 82;
-		request.amount = 12.3;
+		request.merchantId = "82";
+		request.amount = "12.3";
 		request.description = "Test description";
 		
 		Map<String, String> expected = new TreeMap<String, String>();

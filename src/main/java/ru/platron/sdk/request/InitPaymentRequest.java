@@ -13,7 +13,7 @@ public class InitPaymentRequest extends BaseRequest {
 	public static final String SCRIPT_NAME = "init_payment.php";
 	
 	@XmlElement(name = "pg_amount", required = true)
-	public double amount;
+	public String amount;
 	
 	@XmlElement(name = "pg_currency")
 	public String currency;

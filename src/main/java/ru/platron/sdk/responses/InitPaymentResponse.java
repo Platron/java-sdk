@@ -7,10 +7,11 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import ru.platron.sdk.XmlObject;
 import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "response")
-public class InitPaymentResponse {
+public class InitPaymentResponse extends XmlObject {
 	@XmlElement(name = "pg_status")
 	public String status;
 	

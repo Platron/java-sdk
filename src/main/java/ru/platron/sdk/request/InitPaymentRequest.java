@@ -99,6 +99,22 @@ public class InitPaymentRequest extends BaseRequest {
 	@XmlElement(name = "pg_recurring_lifetime")
 	public String recurringLifetime;
 	
+	
+	@XmlElement(name = "pg_card_number")
+	public String cardNumber;
+	
+	@XmlElement(name = "pg_user_cardholder")
+	public String userCardholder;
+	
+	@XmlElement(name = "pg_exp_year")
+	public String expYear;
+	
+	@XmlElement(name = "pg_exp_month")
+	public String expMonth;
+	
+	@XmlElement(name = "pg_cvv2")
+	public String cvv2;
+	
 	public String getScriptName() {
 		return "init_payment.php";
 	}

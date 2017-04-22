@@ -56,9 +56,9 @@ public class Signer {
 		return md5(prepare(scriptName, params));
 	}
 
-	public boolean check(String scriptName, BaseHook hook) {
-		String signature = make(scriptName, (TreeMap<String, String>) hook.getParamsMap());
+	public boolean check(String scriptName, XmlObject obj) {
+		String signature = make(scriptName, (TreeMap<String, String>) obj.getParamsMap());
 		
-		return signature == hook.signature;
+		return signature.equals(obj.signature);
 	}
 }

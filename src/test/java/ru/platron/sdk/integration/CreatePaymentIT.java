@@ -1,21 +1,18 @@
 package ru.platron.sdk.integration;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import ru.platron.sdk.Client;
 import ru.platron.sdk.Signer;
 import ru.platron.sdk.request.InitPaymentRequest;
 import ru.platron.sdk.responses.InitPaymentResponse;
-import ru.platron.sdk.utils.XmlUtils;
 
 public class CreatePaymentIT {
-
-	//@Ignore("ignore while other test not ready")
 	@Test
-	public void test() {
+	public void createPaymentWithMinimumRequiredData() {
 		InitPaymentRequest request = new InitPaymentRequest();
 		request.merchantId = MerchantSettings.merchantId;
 		request.amount = "3.24";
@@ -34,9 +31,8 @@ public class CreatePaymentIT {
 		assertEquals("need data", response.redirectUrlType);
 	}
 	
-	//@Ignore("ignore while other test not ready")
 	@Test
-	public void test2() {
+	public void createPaymentWithPaymentSystem() {
 		InitPaymentRequest request = new InitPaymentRequest();
 		request.merchantId = MerchantSettings.merchantId;
 		request.amount = "3.24";
@@ -50,17 +46,15 @@ public class CreatePaymentIT {
 		
 		Client client = new Client();
 		InitPaymentResponse response = (InitPaymentResponse) client.send(request);
-		
-		//System.out.println(XmlUtils.toXml(response));		
+			
 		assertEquals("ok", response.status);
 		assertNotNull(response.paymentId);
 		assertNotNull(response.redirectUrl);
 		assertEquals("payment system", response.redirectUrlType);
 	}
 	
-	//@Ignore("ignore while other test not ready")
 	@Test
-	public void test3() {
+	public void createPaymentWithCardData() {
 		InitPaymentRequest request = new InitPaymentRequest();
 		request.merchantId = MerchantSettings.merchantId;
 		request.amount = "3.24";
@@ -81,12 +75,10 @@ public class CreatePaymentIT {
 		
 		Client client = new Client();
 		InitPaymentResponse response = (InitPaymentResponse) client.send(request);
-		
-		//System.out.println(XmlUtils.toXml(response));		
+			
 		assertEquals("ok", response.status);
 		assertNotNull(response.paymentId);
 		assertNotNull(response.redirectUrl);
 		assertEquals("payment system", response.redirectUrlType);
 	}
-
 }

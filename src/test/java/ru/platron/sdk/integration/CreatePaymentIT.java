@@ -8,7 +8,7 @@ import org.junit.Test;
 import ru.platron.sdk.Client;
 import ru.platron.sdk.Signer;
 import ru.platron.sdk.request.InitPaymentRequest;
-import ru.platron.sdk.responses.InitPaymentResponse;
+import ru.platron.sdk.response.InitPaymentResponse;
 
 public class CreatePaymentIT {
 	@Test

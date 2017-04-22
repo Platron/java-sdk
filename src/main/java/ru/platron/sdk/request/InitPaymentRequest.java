@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import ru.platron.sdk.responses.InitPaymentResponse;
+import ru.platron.sdk.response.InitPaymentResponse;
 
 @XmlRootElement(name = "request")
 @XmlAccessorType(XmlAccessType.FIELD)

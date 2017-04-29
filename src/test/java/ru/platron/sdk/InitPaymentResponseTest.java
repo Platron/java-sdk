@@ -7,8 +7,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import org.junit.Test;
 
-import ru.platron.sdk.response.InitPaymentResponse;
-import ru.platron.sdk.response.PaymentSystem;
+import ru.platron.sdk.services.init_payment.InitPaymentResponse;
+import ru.platron.sdk.services.init_payment.PaymentSystem;
 
 public class InitPaymentResponseTest {
 

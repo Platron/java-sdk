@@ -1,9 +1,9 @@
-package ru.platron.sdk.request;
+package ru.platron.sdk.services.ps_list;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import ru.platron.sdk.response.PsListResponse;
+import ru.platron.sdk.services.BaseRequest;
 
 @XmlRootElement(name = "request")
 public class PsListRequest extends BaseRequest {

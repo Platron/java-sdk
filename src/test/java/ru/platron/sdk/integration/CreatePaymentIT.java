@@ -8,10 +8,10 @@ import org.junit.Test;
 
 import ru.platron.sdk.Client;
 import ru.platron.sdk.Signer;
-import ru.platron.sdk.request.GetStatusRequest;
-import ru.platron.sdk.request.InitPaymentRequest;
-import ru.platron.sdk.response.GetStatusResponse;
-import ru.platron.sdk.response.InitPaymentResponse;
+import ru.platron.sdk.services.get_status.GetStatusRequest;
+import ru.platron.sdk.services.get_status.GetStatusResponse;
+import ru.platron.sdk.services.init_payment.InitPaymentRequest;
+import ru.platron.sdk.services.init_payment.InitPaymentResponse;
 
 public class CreatePaymentIT {
 	private Signer signer;

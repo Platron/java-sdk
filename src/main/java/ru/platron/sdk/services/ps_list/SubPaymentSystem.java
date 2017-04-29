@@ -1,4 +1,4 @@
-package ru.platron.sdk.response.data_objects;
+package ru.platron.sdk.services.ps_list;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

@@ -1,4 +1,4 @@
-package ru.platron.sdk.request;
+package ru.platron.sdk.services;
 
 import java.util.TreeMap;
 

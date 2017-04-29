@@ -1,4 +1,4 @@
-package ru.platron.sdk.response;
+package ru.platron.sdk.services.get_status;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

@@ -1,4 +1,4 @@
-package ru.platron.sdk.response;
+package ru.platron.sdk.services.init_payment;
 
 import java.util.List;
 

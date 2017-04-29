@@ -1,4 +1,4 @@
-package ru.platron.sdk.response.data_objects;
+package ru.platron.sdk.services.ps_list;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "pg_payment_system")
-public class PsListResponsePaymentSystem {
+public class PaymentSystem {
 	@XmlElement(name = "pg_name")
 	public String name;
 	

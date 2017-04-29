@@ -1,4 +1,4 @@
-package ru.platron.sdk.request;
+package ru.platron.sdk.services.init_payment;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import ru.platron.sdk.Signer;
 import ru.platron.sdk.Utils;
+import ru.platron.sdk.services.init_payment.InitPaymentRequest;
 
 public class InitPaymentRequestTest {
 

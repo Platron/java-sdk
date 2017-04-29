@@ -1,12 +1,13 @@
-package ru.platron.sdk.response;
+package ru.platron.sdk.services.ps_list;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import ru.platron.sdk.Utils;
-import ru.platron.sdk.response.data_objects.PsListResponsePaymentSystem;
-import ru.platron.sdk.response.data_objects.SubPaymentSystem;
+import ru.platron.sdk.services.ps_list.PsListResponse;
+import ru.platron.sdk.services.ps_list.PaymentSystem;
+import ru.platron.sdk.services.ps_list.SubPaymentSystem;
 import ru.platron.sdk.utils.XmlUtils;
 
 public class PsListResponseTest {
@@ -17,7 +18,7 @@ public class PsListResponseTest {
 		
 		assertEquals(4, response.paymentSystems.size());
 		
-		PsListResponsePaymentSystem paymentSystem = response.paymentSystems.get(1);
+		PaymentSystem paymentSystem = response.paymentSystems.get(1);
 		//System.out.println(paymentSystem.subPaymentSystems.get(0).name);
 		assertEquals("CASH", paymentSystem.name);
 		assertEquals("Наличные: Евросеть, ОСМП, Элекснет", paymentSystem.description);

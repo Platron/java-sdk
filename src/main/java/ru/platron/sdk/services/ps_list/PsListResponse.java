@@ -1,4 +1,4 @@
-package ru.platron.sdk.response;
+package ru.platron.sdk.services.ps_list;
 
 import java.util.List;
 
@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ru.platron.sdk.XmlObject;
-import ru.platron.sdk.response.data_objects.PsListResponsePaymentSystem;
 
 @XmlRootElement(name = "response")
 public class PsListResponse extends XmlObject {
@@ -16,5 +15,5 @@ public class PsListResponse extends XmlObject {
 	public String status;
 
 	@XmlElementRef
-	public List<PsListResponsePaymentSystem> paymentSystems = null;
+	public List<PaymentSystem> paymentSystems = null;
 }

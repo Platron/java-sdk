@@ -1,9 +1,9 @@
-package ru.platron.sdk.request;
+package ru.platron.sdk.services.get_status;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import ru.platron.sdk.response.GetStatusResponse;
+import ru.platron.sdk.services.BaseRequest;
 
 @XmlRootElement(name = "request")
 public class GetStatusRequest extends BaseRequest {

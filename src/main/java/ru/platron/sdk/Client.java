@@ -7,7 +7,7 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import ru.platron.sdk.request.BaseRequest;
+import ru.platron.sdk.services.BaseRequest;
 import ru.platron.sdk.utils.XmlUtils;
 
 public class Client {

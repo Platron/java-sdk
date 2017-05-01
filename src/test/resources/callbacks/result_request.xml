@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+	<pg_salt>0bd68e</pg_salt>
+	<pg_order_id>654</pg_order_id>
+	<pg_payment_id>765432</pg_payment_id>
+	<pg_amount>100.00</pg_amount>
+	<pg_currency>RUB</pg_currency>
+	<pg_net_amount>100.00</pg_net_amount>
+	<pg_ps_amount>105.00</pg_ps_amount>
+	<pg_ps_full_amount>105.00</pg_ps_full_amount>
+	<pg_ps_currency>RUB</pg_ps_currency>
+	<pg_payment_system>INPLATMTS</pg_payment_system>
+	<pg_result>1</pg_result>
+	<pg_payment_date>2008-12-30 23:59:30</pg_payment_date>
+	<pg_can_reject>0</pg_can_reject>
+	<pg_user_phone>79818244116</pg_user_phone>
+	<pg_need_phone_notification>1</pg_need_phone_notification>
+	<pg_user_contact_email>test@test.ru</pg_user_contact_email>
+	<pg_need_email_notification>1</pg_need_email_notification>
+	<pg_sig>249221092454b42391037c1489c53590</pg_sig>
+</request>

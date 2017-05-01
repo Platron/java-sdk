@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+	<pg_salt>gw41b38vc</pg_salt>
+	<pg_order_id>2614</pg_order_id>
+	<pg_payment_id>825941</pg_payment_id>
+	<pg_payment_system>CREDITCARD</pg_payment_system>
+	<pg_amount>100.00</pg_amount>
+	<pg_net_amount>100.00</pg_net_amount>
+	<pg_currency>RUB</pg_currency>
+	<pg_ps_currency>RUB</pg_ps_currency>
+	<pg_ps_full_amount>100.00</pg_ps_full_amount>
+	<pg_refund_date>2009-09-30 15:32:30</pg_refund_date>
+	<pg_sig>a8762d4fc094efc1b5678ee002243cac</pg_sig>
+</request>

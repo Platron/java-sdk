@@ -10,8 +10,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 
 import ru.platron.sdk.XmlObject;
-import ru.platron.sdk.callbacks.check.CheckRequest;
-import ru.platron.sdk.services.init_payment.InitPaymentResponse;
 
 public class XmlUtils {
 	public static Object fromXml(String xml, Class<?> cls, Class<?> boundCls) {

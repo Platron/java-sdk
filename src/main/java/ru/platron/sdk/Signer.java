@@ -6,8 +6,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.TreeMap;
 
-import ru.platron.sdk.webhook.BaseHook;
-
 public class Signer {
 	
 	private String secretKey;

@@ -1,12 +1,18 @@
-package ru.platron.sdk.request;
+package ru.platron.sdk.callbacks.check;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import ru.platron.sdk.XmlObject;
+import ru.platron.sdk.callbacks.BaseRequest;
+import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "request")
-public class CheckRequest extends XmlObject {
+public class CheckRequest extends BaseRequest {
+	
+	public CheckRequest fromXml(String xml) {
+		return (CheckRequest) XmlUtils.fromXml(xml, BaseRequest.class, CheckRequest.class);
+	}
+	
 	@XmlElement(name = "pg_order_id")
 	public String orderId;
 

@@ -7,20 +7,10 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import ru.platron.sdk.XmlObject;
-import ru.platron.sdk.utils.XmlUtils;
+import ru.platron.sdk.services.BaseResponse;
 
 @XmlRootElement(name = "response")
-public class InitPaymentResponse extends XmlObject {
-	@XmlElement(name = "pg_status")
-	public String status;
-	
-	@XmlElement(name = "pg_error_code")
-	public String errorCode;
-	
-	@XmlElement(name = "pg_error_description")
-	public String errorDescription;
-
+public class InitPaymentResponse extends BaseResponse {
 	@XmlElement(name = "pg_payment_id")
 	public String paymentId;
 	
@@ -36,8 +26,4 @@ public class InitPaymentResponse extends XmlObject {
 	@XmlElementWrapper(name = "pg_ps_additional_data")
 	@XmlElementRef()
 	public List<PaymentSystem> psAdditionalData = null;
-	
-	public static InitPaymentResponse fromXml(String xml) {
-		return (InitPaymentResponse) XmlUtils.fromXml(xml, InitPaymentResponse.class);
-	}
 }

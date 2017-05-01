@@ -22,4 +22,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+	<pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</pluginManagement>
+  </build>
 </project>

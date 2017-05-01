@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<pg_salt>my_salt</pg_salt>
+	<pg_status>ok</pg_status>
+	<pg_payment_id>22241128</pg_payment_id>
+	<pg_amount>1</pg_amount>
+	<pg_currency>RUB</pg_currency>
+	<pg_recurring_profile_id>109642</pg_recurring_profile_id>
+	<pg_recurring_profile_expiry_date>2029-01-29 00:00:00</pg_recurring_profile_expiry_date>
+	<pg_sig>5b2ff43cfa1b7588e5844484f0843b11</pg_sig>
+</response>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_salt>generated salt</pg_salt>
+	<pg_sig>257838b3db95759b735626adc7afe5cd</pg_sig>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_recurring_profile>12345</pg_recurring_profile>
+	<pg_amount>5</pg_amount>
+	<pg_description>Description example</pg_description>
+</request>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+	<pg_salt>8765</pg_salt>
+	<pg_order_id>654</pg_order_id>
+	<pg_payment_id>765432</pg_payment_id>
+	<pg_payment_system>WEBMONEYR</pg_payment_system>
+	<pg_amount>100.00</pg_amount>
+	<pg_currency>RUB</pg_currency>
+	<pg_ps_currency>RUB</pg_ps_currency>
+	<pg_ps_amount>100.00</pg_ps_amount>
+	<pg_ps_full_amount>100.00</pg_ps_full_amount>
+	<pg_sig>12d37c932db1f78be503f7ffc7dc13da</pg_sig>
+</request>

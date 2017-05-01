@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+	<pg_salt>salt</pg_salt>
+	<pg_sig>c1e39ce17fd285618cceee215ce857f7</pg_sig>
+	<pg_status>error</pg_status>
+	<pg_error_description>System error</pg_error_description>
+</response>

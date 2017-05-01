@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+	<pg_payment_id>765432</pg_payment_id>
+	<pg_order_id>654</pg_order_id>
+	<pg_salt>salt</pg_salt>
+	<pg_sig>febc05297677ff695ff879cdec081d8d</pg_sig>
+</request>

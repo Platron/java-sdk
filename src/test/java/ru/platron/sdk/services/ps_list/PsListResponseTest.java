@@ -14,7 +14,7 @@ public class PsListResponseTest {
 
 	@Test
 	public void test() {
-		PsListResponse response = (PsListResponse) XmlUtils.fromXml(Utils.readFile("src/test/resources/responses/ps_list_response.xml"), PsListResponse.class);
+		PsListResponse response = (PsListResponse) XmlUtils.fromXml(Utils.readFile("src/test/resources/responses/ps_list_response.xml"), PsListResponse.class, PsListResponse.class);
 		
 		assertEquals(4, response.paymentSystems.size());
 		

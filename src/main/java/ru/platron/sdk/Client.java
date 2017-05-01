@@ -8,6 +8,7 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 import ru.platron.sdk.services.BaseRequest;
+import ru.platron.sdk.services.BaseResponse;
 import ru.platron.sdk.utils.XmlUtils;
 
 public class Client {
@@ -24,7 +25,7 @@ public class Client {
 			e.printStackTrace();
 		}
 		
-		return XmlUtils.fromXml(result, request.getResponseClass());
+		return XmlUtils.fromXml(result, BaseResponse.class, request.getResponseClass());
 	}
 	
 	public String sendXml(String url, String xml) throws Exception {

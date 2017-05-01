@@ -10,12 +10,14 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 
 import ru.platron.sdk.XmlObject;
+import ru.platron.sdk.callbacks.check.CheckRequest;
+import ru.platron.sdk.services.init_payment.InitPaymentResponse;
 
 public class XmlUtils {
-	public static Object fromXml(String xml, Class<?> cls) {
+	public static Object fromXml(String xml, Class<?> cls, Class<?> boundCls) {
 		Object response = null;
 		try {
-			JAXBContext jaxbContext = JAXBContext.newInstance(cls);
+			JAXBContext jaxbContext = JAXBContext.newInstance(cls, boundCls);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			
 			response = jaxbUnmarshaller.unmarshal(new StreamSource(new StringReader(xml)));

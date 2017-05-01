@@ -19,7 +19,7 @@ public class GetStatusRequest extends BaseRequest {
 	}
 
 	@Override
-	public Class<?> getResponseClass() {
+	public Class<GetStatusResponse> getResponseClass() {
 		return GetStatusResponse.class;
 	}
 

@@ -23,11 +23,11 @@ public class XmlObject {
 			try {
 				value = field.get(this);
 			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
+				System.exit(1);
 			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
+				System.exit(1);
 			}
 			if (value == null) {
 				continue;

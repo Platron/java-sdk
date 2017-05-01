@@ -13,6 +13,6 @@ public class BaseResponse extends XmlObject {
 	@XmlElement(name = "pg_error_code")
 	public String errorCode;
 	
-	@XmlElement(name = "pg_error_descritpion")
+	@XmlElement(name = "pg_error_description")
 	public String errorDescription;
 }

@@ -25,8 +25,10 @@ public class Signer {
 	        digest = messageDigest.digest();
 	    } catch (NoSuchAlgorithmException e) {
 	        e.printStackTrace();
+	        System.exit(1);
 	    } catch (UnsupportedEncodingException e) {
 	    	e.printStackTrace();
+	    	System.exit(1);
 	    }
 	 
 	    BigInteger bigInt = new BigInteger(1, digest);

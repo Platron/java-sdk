@@ -21,8 +21,9 @@ public class Client {
 		try {
 			result = sendXml(url, request.toXml());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			System.out.println("Can't send request");
 			e.printStackTrace();
+			System.exit(1);
 		}
 		
 		return XmlUtils.fromXml(result, BaseResponse.class, request.getResponseClass());
@@ -41,8 +42,6 @@ public class Client {
 		wr.writeBytes(urlParameters);
 		wr.flush();
 		wr.close();
-		
-		//int responseCode = con.getResponseCode();
 		
 		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 		String inputLine;

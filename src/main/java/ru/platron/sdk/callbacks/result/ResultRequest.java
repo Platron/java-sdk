@@ -4,14 +4,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ru.platron.sdk.callbacks.BaseRequest;
-import ru.platron.sdk.callbacks.check.CheckRequest;
 import ru.platron.sdk.utils.XmlUtils;
 
 @XmlRootElement(name = "request")
 public class ResultRequest extends BaseRequest {
 	
-	public CheckRequest fromXml(String xml) {
-		return (CheckRequest) XmlUtils.fromXml(xml, BaseRequest.class, ResultRequest.class);
+	public ResultRequest fromXml(String xml) {
+		return (ResultRequest) XmlUtils.fromXml(xml, BaseRequest.class, ResultRequest.class);
 	}
 	
 	@XmlElement(name = "pg_order_id")

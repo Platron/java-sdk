@@ -21,8 +21,8 @@ public class XmlUtils {
 			response = jaxbUnmarshaller.unmarshal(new StreamSource(new StringReader(xml)));
 			
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 		
 		return response;
@@ -39,8 +39,8 @@ public class XmlUtils {
 			return writer.toString();
 			
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 		
 		return "";

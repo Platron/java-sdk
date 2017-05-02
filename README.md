@@ -2,11 +2,12 @@
 ## Описание
 SDK используется для быстрой интеграции к платежному агрегатору Платрон ([https://platron.ru](https://platron.ru))
 ### Установка
-Для использования SDK необходимо скачать jar файл по этой ссылке **тут будет ссылка**.
+Для использования SDK необходимо скачать jar файл по этой ссылке ([https://github.com/zeggel/platron-java-sdk/releases](https://github.com/zeggel/platron-java-sdk/releases)).
 Jar файл можно собрать из исходников с помощью Maven, для этого необходимо выполнить команду:
 ```
 mvn package
 ```
+Для прохождения интеграционного теста CreatePaymentIT, необходимо в файле "/src/test/java/ru/platron/sdk/integration/MerchantSettings.java" указать merchant id и secret key.
 
 ### Использование
 #### Создание платежа

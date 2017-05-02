@@ -2,7 +2,7 @@
 ## Описание
 SDK используется для быстрой интеграции к платежному агрегатору Платрон ([https://platron.ru](https://platron.ru))
 ### Установка
-Для использования SDK необходимо скачать jar файл по этой ссылке ([https://github.com/Platron/platron-java-sdk/releases/download/v0.0.1/platron-java-sdk-0.0.1-SNAPSHOT.jar](https://github.com/Platron/platron-java-sdk/releases/download/v0.0.1/platron-java-sdk-0.0.1-SNAPSHOT.jar)).
+Для использования SDK необходимо скачать jar файл по этой ссылке ([https://github.com/Platron/platron-java-sdk/releases](https://github.com/Platron/platron-java-sdk/releases)).
 Jar файл можно собрать из исходников с помощью Maven, для этого необходимо выполнить команду:
 ```
 mvn package

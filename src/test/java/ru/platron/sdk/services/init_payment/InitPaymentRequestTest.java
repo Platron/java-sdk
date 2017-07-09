@@ -41,6 +41,7 @@ public class InitPaymentRequestTest {
 		expected.put("pg_merchant_id", "82");
 		expected.put("pg_amount", "12.3");
 		expected.put("pg_description", "Test description");
+		expected.put("cms_payment_module", "platron-java-sdk");
 		
 		assertEquals(expected, request.getParamsMap());
 	}

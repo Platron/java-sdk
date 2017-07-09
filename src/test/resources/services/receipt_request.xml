@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_salt>generated salt</pg_salt>
+	<pg_sig>51675d049e2e323f181caa88576284c9</pg_sig>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_operation_type>payment</pg_operation_type>
+	<pg_payment_id>33221100</pg_payment_id>
+	<pg_items>
+		<pg_label>test1</pg_label>
+		<pg_price>1.00</pg_price>
+		<pg_quantity>1</pg_quantity>
+		<pg_amount>1.00</pg_amount>
+		<pg_vat>18</pg_vat>
+	</pg_items>
+	<pg_items>
+		<pg_label>test2</pg_label>
+		<pg_price>2</pg_price>
+		<pg_quantity>2</pg_quantity>
+	</pg_items>
+</request>

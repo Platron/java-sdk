@@ -115,6 +115,9 @@ public class InitPaymentRequest extends BaseRequest {
 	@XmlElement(name = "pg_cvv2")
 	public String cvv2;
 	
+	@XmlElement(name = "cms_payment_module")
+	public String cmsPaymentModule = "platron-java-sdk";
+	
 	public String getScriptName() {
 		return "init_payment.php";
 	}

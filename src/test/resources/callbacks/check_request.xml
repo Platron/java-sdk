@@ -9,5 +9,6 @@
 	<pg_ps_currency>RUB</pg_ps_currency>
 	<pg_ps_amount>100.00</pg_ps_amount>
 	<pg_ps_full_amount>100.00</pg_ps_full_amount>
-	<pg_sig>12d37c932db1f78be503f7ffc7dc13da</pg_sig>
+	<pg_sig>66e2026d7002d2eb6634bc09168fa55a</pg_sig>
+	<cms_payment_module>platron-java-sdk</cms_payment_module>
 </request>

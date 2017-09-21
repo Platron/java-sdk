@@ -17,5 +17,6 @@
 	<pg_need_phone_notification>1</pg_need_phone_notification>
 	<pg_user_contact_email>test@test.ru</pg_user_contact_email>
 	<pg_need_email_notification>1</pg_need_email_notification>
-	<pg_sig>249221092454b42391037c1489c53590</pg_sig>
+	<pg_sig>5ad30ad4dd7dd4d66afb565a56925b02</pg_sig>
+	<cms_payment_module>platron-java-sdk</cms_payment_module>
 </request>

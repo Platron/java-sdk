@@ -3,5 +3,6 @@
 	<pg_payment_id>765432</pg_payment_id>
 	<pg_order_id>654</pg_order_id>
 	<pg_salt>salt</pg_salt>
-	<pg_sig>febc05297677ff695ff879cdec081d8d</pg_sig>
+	<pg_sig>826582fdd67a61681190a51df79816f2</pg_sig>
+	<cms_payment_module>platron-java-sdk</cms_payment_module>
 </request>

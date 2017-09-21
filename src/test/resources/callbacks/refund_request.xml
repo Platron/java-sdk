@@ -10,5 +10,6 @@
 	<pg_ps_currency>RUB</pg_ps_currency>
 	<pg_ps_full_amount>100.00</pg_ps_full_amount>
 	<pg_refund_date>2009-09-30 15:32:30</pg_refund_date>
-	<pg_sig>a8762d4fc094efc1b5678ee002243cac</pg_sig>
+	<pg_sig>0eab289c082c3fbe408a52f1d0cb51a5</pg_sig>
+	<cms_payment_module>platron-java-sdk</cms_payment_module>
 </request>

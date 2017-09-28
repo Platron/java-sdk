@@ -36,6 +36,9 @@ public class MakeRecurringRequest extends BaseRequest {
 		return "make_recurring_payment.php";
 	}
 
+	@XmlElement(name = "cms_payment_module")
+	public String cmsPaymentModule = "platron-java-sdk";
+
 	@Override
 	public Class<MakeRecurringResponse> getResponseClass() {
 		return MakeRecurringResponse.class;

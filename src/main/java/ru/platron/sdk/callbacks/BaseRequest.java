@@ -21,5 +21,5 @@ public class BaseRequest extends XmlObject {
 	}
 
 	@XmlElement(name = "cms_payment_module")
-	public String cmsPaymentModule = "platron-java-sdk";
+	public String cmsPaymentModule;
 }

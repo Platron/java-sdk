@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <request>
 	<pg_salt>generated salt</pg_salt>
-	<pg_sig>257838b3db95759b735626adc7afe5cd</pg_sig>
+	<pg_sig>0a31acf71afdc14b0959e936b3460453</pg_sig>
 	<pg_merchant_id>82</pg_merchant_id>
 	<pg_recurring_profile>12345</pg_recurring_profile>
 	<pg_amount>5</pg_amount>
 	<pg_description>Description example</pg_description>
+	<cms_payment_module>platron-java-sdk</cms_payment_module>
 </request>

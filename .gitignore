@@ -4,3 +4,5 @@ target/*
 .classpath
 .project
 .settings
+/bin/
+src/test/java/ru/platron/sdk/integration/MerchantSettings.java

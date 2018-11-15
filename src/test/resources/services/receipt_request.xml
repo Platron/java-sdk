@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <request>
 	<pg_salt>generated salt</pg_salt>
-	<pg_sig>51675d049e2e323f181caa88576284c9</pg_sig>
+	<pg_sig>5a261a6c6dda9c9df4c2c135c81c84fc</pg_sig>
 	<pg_merchant_id>82</pg_merchant_id>
 	<pg_operation_type>payment</pg_operation_type>
 	<pg_payment_id>33221100</pg_payment_id>
+	<pg_additional_payment_type>credit</pg_additional_payment_type>
+	<pg_additional_payment_amount>100</pg_additional_payment_amount>
 	<pg_items>
 		<pg_label>test1</pg_label>
 		<pg_price>1.00</pg_price>
 		<pg_quantity>1</pg_quantity>
 		<pg_amount>1.00</pg_amount>
 		<pg_vat>18</pg_vat>
+		<pg_type>product</pg_type>
+		<pg_payment_type>full_payment</pg_payment_type>
+		<pg_agent_type>commissionaire</pg_agent_type>
+		<pg_agent_name>test agent</pg_agent_name>
+		<pg_agent_inn>123456789012</pg_agent_inn>
+		<pg_agent_phone>79050000000</pg_agent_phone>
 	</pg_items>
 	<pg_items>
 		<pg_label>test2</pg_label>

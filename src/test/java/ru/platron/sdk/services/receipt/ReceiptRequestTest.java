@@ -18,6 +18,8 @@ public class ReceiptRequestTest {
 		request.merchantId = "82";
 		request.operationType = "payment";
 		request.paymentId = "33221100";
+		request.additionalPaymentType = "credit";
+		request.additionalPaymentAmount = "100";
 		
 		ReceiptItem item1 = new ReceiptItem();
 		item1.label = "test1";
@@ -25,6 +27,13 @@ public class ReceiptRequestTest {
 		item1.quantity = "1";
 		item1.amount = "1.00";
 		item1.vat = "18";
+		item1.type = "product";
+		item1.paymentType = "full_payment";
+		item1.agentType = "commissionaire";
+		item1.agentName = "test agent";
+		item1.agentPhone = "79050000000";
+		item1.agentInn = "123456789012";
+		
 		ReceiptItem item2 = new ReceiptItem();
 		item2.label = "test2";
 		item2.price = "2";
@@ -37,7 +46,7 @@ public class ReceiptRequestTest {
 		request.sign(new Signer("secret_key"));
 		
 		String expected = Utils.readFile("src/test/resources/services/receipt_request.xml").replaceAll("\\r|\\n|\\t", "");
-		
+
 		assertEquals(expected, request.toXml());
 	}
 

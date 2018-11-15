@@ -22,6 +22,12 @@ public class ReceiptRequest extends BaseRequest {
 	@XmlElement(name = "pg_order_id")
 	public String orderId;
 	
+	@XmlElement(name = "pg_additional_payment_type")
+	public String additionalPaymentType;
+	
+	@XmlElement(name = "pg_additional_payment_amount")
+	public String additionalPaymentAmount;
+	
 	//@XmlElement(name = "pg_items")
 	@XmlElementRef
 	public List<ReceiptItem> items = new ArrayList<ReceiptItem>();

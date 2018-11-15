@@ -7,8 +7,7 @@ Jar файл можно собрать из исходников с помощь
 ```
 mvn package
 ```
-Для прохождения интеграционного теста CreatePaymentIT, необходимо в файле "/src/test/java/ru/platron/sdk/integration/MerchantSettings.sample" указать merchant id и secret key
-и поменять расширение на .java
+Для прохождения интеграционного теста CreatePaymentIT, необходимо скопировать файл "/src/test/java/ru/platron/sdk/integration/MerchantSettings.sample" с расширением .java и указать в нем merchant id и secret key
 
 ### Использование
 #### Создание платежа

@@ -19,11 +19,4 @@ public class InitPaymentResponse extends BaseResponse {
 	
 	@XmlElement(name = "pg_redirect_url_type")
 	public String redirectUrlType;
-	
-	@XmlElement(name = "pg_accepted_payment_systems")
-	public String acceptedPaymentSystems;
-	
-	@XmlElementWrapper(name = "pg_ps_additional_data")
-	@XmlElementRef()
-	public List<PaymentSystem> psAdditionalData = null;
 }

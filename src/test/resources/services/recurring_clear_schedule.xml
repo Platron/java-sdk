@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<response>
-    <pg_status>ok</pg_status>
-    <pg_recurring_profile>337146</pg_recurring_profile>
-    <pg_salt>salt</pg_salt>
-    <pg_sig>a764fb36af2e607ee2e841989adr65ty</pg_sig>
-</response>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_salt>salt</pg_salt>
+	<pg_sig>4af1fe8bee2fe0ba8a2c9dae5bc9c870</pg_sig>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_recurring_profile>337146</pg_recurring_profile>
+</request>

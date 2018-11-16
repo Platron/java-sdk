@@ -8,7 +8,7 @@ import ru.platron.sdk.services.recurring_set_schedule.RecurringSetScheduleReques
 import ru.platron.sdk.services.recurring_set_schedule.Template;
 import java.util.ArrayList;
 
-public class RecurringSetScheduleTest {
+public class RecurringSetScheduleRequestTest {
 	@Test
 	public void testTemplate() {
 		RecurringSetScheduleRequest requestTemplate = new RecurringSetScheduleRequest();

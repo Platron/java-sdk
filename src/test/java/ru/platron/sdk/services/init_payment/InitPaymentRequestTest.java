@@ -25,7 +25,7 @@ public class InitPaymentRequestTest {
 		
 		String actual = request.toXml();
 		
-		String expected = Utils.readFile("src/test/resources/requests/init_payment.xml").replaceAll("(\\t|\\n|\\r)", "");
+		String expected = Utils.readFile("src/test/resources/services/init_payment.xml").replaceAll("(\\t|\\n|\\r)", "");
 		
 		assertEquals(expected, actual);
 	}

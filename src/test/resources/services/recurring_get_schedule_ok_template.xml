@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <pg_status>error</pg_status>
+    <pg_recurring_profile>337146</pg_recurring_profile>
+    <pg_error_code>200</pg_error_code>
+    <pg_error_description>Расписание не указано</pg_error_description>
+    <pg_salt>salt</pg_salt>
+    <pg_sig>ab8148000df497a47f18bdee2d0a04af</pg_sig>
+</response>

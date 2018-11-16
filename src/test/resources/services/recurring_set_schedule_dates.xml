@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_salt>salt</pg_salt>
+	<pg_sig>a9e3e942bf1f03fab5bcd4c9a02c8ddd</pg_sig>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_recurring_profile>337146</pg_recurring_profile>
+	<pg_amount>12.41</pg_amount>
+	<pg_dates>2018-08-15 14:00:00</pg_dates>
+	<pg_dates>2018-08-15 14:30:00</pg_dates>
+	<pg_dates>2018-08-15 15:00:00</pg_dates>
+</request>

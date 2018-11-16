@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <pg_status>ok</pg_status>
+    <pg_recurring_profile>337146</pg_recurring_profile>
+    <pg_salt>salt</pg_salt>
+    <pg_sig>9622e7bbf624cd65ea437a413f060582</pg_sig>
+</response>

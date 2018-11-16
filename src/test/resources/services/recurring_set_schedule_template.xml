@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<pg_salt>salt</pg_salt>
+	<pg_sig>01beac9ddf428ab3d3f4baed3cbc941b</pg_sig>
+	<pg_merchant_id>82</pg_merchant_id>
+	<pg_recurring_profile>337146</pg_recurring_profile>
+	<pg_amount>12.41</pg_amount>
+	<pg_template>
+		<pg_start_date>2018-08-15 15:30:00</pg_start_date>
+		<pg_interval>week</pg_interval>
+		<pg_period>2</pg_period>
+		<pg_max_periods>5</pg_max_periods>
+	</pg_template>
+</request>

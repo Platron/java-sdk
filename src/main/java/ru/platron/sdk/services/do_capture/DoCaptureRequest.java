@@ -10,6 +10,9 @@ public class DoCaptureRequest extends BaseRequest {
 	
 	// TODO add pg_long_record
 	
+	@XmlElement(name = "pg_amount")
+	public String amount;
+	
 	@Override
 	public String getScriptName() {
 		return "do_capture.php";

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <request>
 	<pg_salt>generated salt</pg_salt>
-	<pg_sig>5a261a6c6dda9c9df4c2c135c81c84fc</pg_sig>
+	<pg_sig>8786aef801699a455cfc94d952d8c6de</pg_sig>
 	<pg_merchant_id>82</pg_merchant_id>
 	<pg_operation_type>payment</pg_operation_type>
 	<pg_payment_id>33221100</pg_payment_id>
+	<pg_customer_name>name</pg_customer_name>
+	<pg_customer_inn>526317984689</pg_customer_inn>
 	<pg_additional_payment_type>credit</pg_additional_payment_type>
 	<pg_additional_payment_amount>100</pg_additional_payment_amount>
 	<pg_items>
@@ -14,6 +16,7 @@
 		<pg_amount>1.00</pg_amount>
 		<pg_vat>18</pg_vat>
 		<pg_type>product</pg_type>
+		<pg_nomenclature_code>44h4Dh04h2Fh1Fh96h81h78h4Ah67h58h4Ah35h2Eh54h31h31h32h30h30h30h</pg_nomenclature_code>
 		<pg_payment_type>full_payment</pg_payment_type>
 		<pg_agent_type>commissionaire</pg_agent_type>
 		<pg_agent_name>test agent</pg_agent_name>

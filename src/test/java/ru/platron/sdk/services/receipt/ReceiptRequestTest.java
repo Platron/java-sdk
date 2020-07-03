@@ -20,6 +20,8 @@ public class ReceiptRequestTest {
 		request.paymentId = "33221100";
 		request.additionalPaymentType = "credit";
 		request.additionalPaymentAmount = "100";
+		request.customerName = "name";
+		request.customerInn = "526317984689";
 		
 		ReceiptItem item1 = new ReceiptItem();
 		item1.label = "test1";
@@ -33,6 +35,7 @@ public class ReceiptRequestTest {
 		item1.agentName = "test agent";
 		item1.agentPhone = "79050000000";
 		item1.agentInn = "123456789012";
+		item1.nomenclatureCode = "44h4Dh04h2Fh1Fh96h81h78h4Ah67h58h4Ah35h2Eh54h31h31h32h30h30h30h";
 		
 		ReceiptItem item2 = new ReceiptItem();
 		item2.label = "test2";

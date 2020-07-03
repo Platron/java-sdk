@@ -22,6 +22,9 @@ public class ReceiptItem {
 	
 	@XmlElement(name = "pg_type")
 	public String type;
+
+	@XmlElement(name = "pg_nomenclature_code")
+	public String nomenclatureCode;
 	
 	@XmlElement(name = "pg_payment_type")
 	public String paymentType;
